@@ -34,6 +34,7 @@ $msg = [
 $alertzy_test = push_message($msg);
 ```
 - You can also supply a "priority" property to the message array ```$msg['priorty']=(0|1|2)``` as per alertzy documentation
+- For further customisation see ```push_alertzy.php```
 
 ### Sending Buttons
 - This is particularly useful for giving users options, e.g. for a 2FA interface
@@ -52,6 +53,7 @@ $msg = [
 ];
 $alertzy_test_buttons = push_message($msg);
 ```
+- For further customisation see ```push_alertzy.php```
 
 ## IFTTT
 [IFTTT Webhooks](https://ifttt.com/maker_webhooks)
@@ -78,6 +80,8 @@ $msg = [
 ```
 - For the sake of uniformity ```$msg['var_1']``` is handled the same as ```$msg['title']``` and ```$msg['var_2'] == $msg['body`]``` so you can use either. 
 - (title and body) are kept in case you wanted to send multiple messages (which you can do by simply chaning ```$msg['provider']``` each iteration
+- For further customisation see ```push_ifttt.php```
+
 
 ## Pushover
 [Pushover](https://pushover.net/)
@@ -93,6 +97,7 @@ $msg = [
  ]; 
 $pushover_test = push_message($msg);
 ```
+- For further customisation see ```push_pushover.php```
 
 ## Tenta
 [Tenta](https://tenta.me/)
@@ -108,6 +113,7 @@ $msg = [
 ]; 
 $tenta_test = push_message($msg);
 ```
+- For further customisation see ```push_tenta.php```
 
 ## WirePusher
 [WirePusher](https://wirepusher.com/)
@@ -124,6 +130,7 @@ $msg = [
 ]; 
 $wirepusher_test = push_message($msg);
 ```
+- For further customisation see ```push_wirepusher.php```
 
 ## XDroid
 [XDroid](https://play.google.com/store/apps/details?id=net.xdroid.pn&hl=en&gl=US)
@@ -139,6 +146,14 @@ $msg = [
 ]; 
 $xdroid_test = push_message($msg);
 ```
+- For further customisation see ```push_xdroid.php```
 
 
+## Other Apps
+- Please let me know if there are any other app providers that would be good. 
+- I end up with different notification apps for different reasons, and having a single function is useful for that purpose, hope it's useful for you too
+
+## Planned Further Adapations
+- Make images work more uniformally with the providers that can do images
+- Python Library of equivalence
 

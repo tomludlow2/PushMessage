@@ -1,0 +1,27 @@
+<?php
+
+	#Define the constants for your file
+
+	define("KEY_ALERTZY", "alertzy_key");
+	define("KEY_XDROID", "xdroid_key");
+	define("KEY_WIREPUSHER", "wirepusher_key");
+	define("KEY_TENTA", "tenta_key");
+	define("KEY_PUSHOVER", "pushover_key");
+	define("KEY_IFTTT", "iftt_key");
+
+	$print_config = 0;
+
+	define("TEST_ENDPOINT","https://your.local.debugging.endpoint/?postman");
+
+	if($print_config) {
+		echo "Welcome\n";
+		echo "Your config:\n";
+		echo "Alertzy Key: \t\t" . KEY_ALERTZY . " \n";
+		echo "XDroid Key: \t\t" . KEY_XDROID . " \n";
+		echo "WirePusher Key: \t" . KEY_WIREPUSHER . " \n";
+		echo "Tenta Key: \t\t" . KEY_TENTA . " \n";
+		echo "Pushover Key: \t\t". KEY_PUSHOVER . " \n";
+		echo "IFTTT Key: \t\t" . KEY_IFTTT . " \n";
+	}
+
+?>

@@ -95,7 +95,7 @@ $pushover_test = push_message($msg);
 ```
 
 ## Tenta
-[Tenta] (https://tenta.me/)
+[Tenta](https://tenta.me/)
 - Basic GUI but nice clean notifications
 - Main limiting factor is 10 notifications per day
 - Usage:
@@ -110,7 +110,7 @@ $tenta_test = push_message($msg);
 ```
 
 ## WirePusher
-[WirePusher] (https://wirepusher.com/)
+[WirePusher](https://wirepusher.com/)
 - This has short API Keys which are easier for users to copy
 - Notifications can be deleted per "day / 7 days / etc"
 - The app also supports different notification *types* ie controlling ringing / buzzing / lights on phone (not yet supported in PushMessage but should be easy for you to add at deployment, just edit ```push_wirepusher.php```
@@ -126,7 +126,7 @@ $wirepusher_test = push_message($msg);
 ```
 
 ## XDroid
-[XDroid] (https://play.google.com/store/apps/details?id=net.xdroid.pn&hl=en&gl=US)
+[XDroid](https://play.google.com/store/apps/details?id=net.xdroid.pn&hl=en&gl=US)
 - I've called it XDroid as there's no memorable name, and the domain they use is xdroid.net
 - The app itself is called Push Notification API *Supported by ads*
 - Usage:
